@@ -1,1 +1,1 @@
-tchista my-doctor
+# my doctor - tchista software group
