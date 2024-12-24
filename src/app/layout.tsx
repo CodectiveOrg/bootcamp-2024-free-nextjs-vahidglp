@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { ReactElement } from "react";
+
 import { Vazirmatn } from "next/font/google";
 
 import HeaderComponent from "@/components/header/header.component";
@@ -21,7 +23,7 @@ export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>) {
+}>): ReactElement {
   return (
     <html lang="fa" dir="rtl" className={vazirmatn.className}>
       <body>
