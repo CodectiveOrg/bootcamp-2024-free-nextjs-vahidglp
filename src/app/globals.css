@@ -86,9 +86,7 @@
   
     .tagline {
       background-color: var(--color-gray-16);
-  
       padding-block: 1rem;
-  
       text-align: center;
     }
   }
