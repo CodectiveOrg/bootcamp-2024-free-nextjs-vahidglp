@@ -8,7 +8,7 @@ import certificateLogo from "@/assets/logo/certificate.svg";
 
 import MingcuteLinkedinFill from "@/components/icons/MingcuteLinkedinFill";
 import MingcuteTelegramFill from "@/components/icons/MingcuteTelegramFill";
-import MingcuteYoutubeFill  from "@/components/icons/MingcuteYoutubeFill";
+import MingcuteYoutubeFill from "@/components/icons/MingcuteYoutubeFill";
 
 import styles from "./footer.module.css";
 
