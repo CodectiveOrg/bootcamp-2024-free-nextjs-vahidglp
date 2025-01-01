@@ -7,6 +7,7 @@ import HeaderComponent from "@/components/header/header.component";
 import FooterComponent from "@/components/footer/footer.component";
 import { NextFont } from "next/dist/compiled/@next/font";
 
+import "@/styles/typography.css";
 import "./globals.css";
 
 const vazirmatn: NextFont = Vazirmatn({
