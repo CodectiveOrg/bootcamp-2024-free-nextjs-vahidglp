@@ -3,6 +3,7 @@ import { ReactElement } from "react";
 import styles from "./page.module.css";
 import CardComponent from "@/components/card/card.component";
 import FilterButtonComponent from "@/components/filter-button/filter-button.component";
+import FilterComponent from "./components/filter.componet";
 
 const items = Array(100)
   .fill(null)
@@ -12,13 +13,13 @@ export default function Page(): ReactElement {
   return (
     <div className={styles.page}>
       <div className={styles.filters}>
-        <CardComponent>
-          <div className={styles.title}>فرد یا زوج</div>
-          <div className={styles.buttons}>
-            <FilterButtonComponent>زوج</FilterButtonComponent>
-            <FilterButtonComponent>فرد</FilterButtonComponent>
-          </div>
-        </CardComponent>
+        <FilterComponent
+          title="فرد یا زوج"
+          options={[
+            { value: "even", label: "زوج" },
+            { value: "odd", label: "فرد" },
+          ]}
+        ></FilterComponent>
       </div>
       <ul className={styles.result}>
         {items.map((item) => (
