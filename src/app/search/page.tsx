@@ -13,11 +13,20 @@ export default function Page(): ReactElement {
   return (
     <div className={styles.page}>
       <div className={styles.filters}>
-        <FilterComponent
+      <FilterComponent
           title="فرد یا زوج"
           options={[
             { value: "even", label: "زوج" },
             { value: "odd", label: "فرد" },
+          ]}
+        ></FilterComponent>
+        <FilterComponent
+          title="بخش پذیری"
+          options={[
+            { value: "two", label: "بخشپذیر بر 2" },
+            { value: "three", label: "بخشپذیر بر 3" },
+            { value: "five", label: "بخشپذیر بر 5" },
+            { value: "seven", label: "بخشپذیر بر 7" },
           ]}
         ></FilterComponent>
       </div>

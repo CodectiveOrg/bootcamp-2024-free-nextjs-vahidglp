@@ -3,8 +3,12 @@
   grid-template-columns: 1fr 4fr;
   gap: 1rem;
   margin-block-end: 2rem;
+  align-items: start;
 
-  
+  .filters {
+    display: grid;
+    gap: 1rem;
+  }
 
   .result {
     display: grid;
