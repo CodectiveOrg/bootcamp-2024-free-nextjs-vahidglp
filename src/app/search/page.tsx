@@ -2,6 +2,7 @@ import { ReactElement } from "react";
 
 import styles from "./page.module.css";
 import CardComponent from "@/components/card/card.component";
+import FilterButtonComponent from "@/components/filter-button/filter-button.component";
 
 const items = Array(100)
   .fill(null)
@@ -10,18 +11,18 @@ const items = Array(100)
 export default function Page(): ReactElement {
   return (
     <div className={styles.page}>
-      <div className={styles.fillters}>
+      <div className={styles.filters}>
         <CardComponent>
           <div className={styles.title}>فرد یا زوج</div>
-          <button>زوج</button>
-          <button>فرد</button>
+          <div className={styles.buttons}>
+            <FilterButtonComponent>زوج</FilterButtonComponent>
+            <FilterButtonComponent>فرد</FilterButtonComponent>
+          </div>
         </CardComponent>
       </div>
       <ul className={styles.result}>
         {items.map((item) => (
-          <li key={item} className={item % 2 === 0 ? styles.active : ""}>
-            {item}
-          </li>
+          <li key={item}>{item}</li>
         ))}
       </ul>
     </div>
