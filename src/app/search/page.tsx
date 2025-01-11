@@ -1,3 +1,5 @@
+'use client';
+
 import { ReactElement } from "react";
 
 import styles from "./page.module.css";
@@ -16,16 +18,16 @@ export default function Page(): ReactElement {
           <FilterComponent
             title="فرد یا زوج"
             options={[
-              { value: "even", label: "زوج" },
-              { value: "odd", label: "فرد" },
+              { key: "even", label: "زوج" },
+              { key: "odd", label: "فرد" },
             ]}
           ></FilterComponent>
           <FilterComponent
             title="بخش پذیری"
             options={[
-              { value: "three", label: "بخشپذیر بر 3" },
-              { value: "five", label: "بخشپذیر بر 5" },
-              { value: "seven", label: "بخشپذیر بر 7" },
+              { key: "three", label: "بخشپذیر بر 3" },
+              { key: "five", label: "بخشپذیر بر 5" },
+              { key: "seven", label: "بخشپذیر بر 7" },
             ]}
           ></FilterComponent>
         </div>
