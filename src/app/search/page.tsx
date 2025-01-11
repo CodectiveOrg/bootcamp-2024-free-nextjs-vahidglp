@@ -2,7 +2,7 @@ import { ReactElement } from "react";
 
 import styles from "./page.module.css";
 import FilterComponent from "./components/filter.componet";
-import FiltersProvider from "./provider/filters.components";
+import FiltersProvider from "./provider/filters.provider";
 
 const items = Array(100)
   .fill(null)
